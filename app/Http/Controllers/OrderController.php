@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use App\Models\Order;
 use Illuminate\Support\Facades\Log;
+use App\Models\Address;
 
 class OrderController extends Controller
 {
@@ -89,6 +90,9 @@ class OrderController extends Controller
         ], 500);
     }
 }
-
+public function selectSavedAddress(){
+    $addresses = Address::where('user_id', Auth::id())->get();
+    return view('information.confirmCheckOut',compact('addresses'));
+}
 
 }

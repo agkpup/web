@@ -24,9 +24,7 @@ Route::get('/service-order', function() {
 Route::get('/checkout',function(){
     return view('information.checkOut');
 });
-Route::get('/checkout-confirm',function(){
-    return view('information.confirmCheckOut');
-})->name('checkOutConfirm');
+Route::get('/checkout-confirm',[OrderController::class,'selectSavedAddress'])->name('checkOutConfirm');
 
 Route::get('/pricing',function(){
     return view('information.price');

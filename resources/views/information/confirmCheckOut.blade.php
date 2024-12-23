@@ -16,39 +16,7 @@
                   <div class="container my-4">
                       <h3 class="mb-3">Shipping Info</h3>
                       <div class="row">
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                          <div class="card p-3 shadow-sm">
-                            <input type="radio" name="shippingAddress" id="address1" class="form-check-input mb-2">
-                            <label for="address1" class="d-block">
-                              <h5 class="card-title">John Doe</h5>
-                              <p class="card-text">123 Main Street, Springfield, USA</p>
-                              <p class="card-text"><small>Phone: (123) 456-7890</small></p>
-                            </label>
-                            <button class="btn btn-link p-0 mt-2" style="font-size: 0.9rem;" data-bs-toggle="modal" data-bs-target="#editModal">Edit</button>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                          <div class="card p-3 shadow-sm">
-                            <input type="radio" name="shippingAddress" id="address2" class="form-check-input mb-2">
-                            <label for="address2" class="d-block">
-                              <h5 class="card-title">Jane Smith</h5>
-                              <p class="card-text">456 Elm Street, Metropolis, USA</p>
-                              <p class="card-text"><small>Phone: (987) 654-3210</small></p>
-                            </label>
-                            <button class="btn btn-link p-0 mt-2" style="font-size: 0.9rem;" data-bs-toggle="modal" data-bs-target="#editModal">Edit</button>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
-                          <div class="card p-3 shadow-sm">
-                            <input type="radio" name="shippingAddress" id="address3" class="form-check-input mb-2">
-                            <label for="address3" class="d-block">
-                              <h5 class="card-title">Alice Johnson</h5>
-                              <p class="card-text">789 Maple Avenue, Gotham, USA</p>
-                              <p class="card-text"><small>Phone: (555) 123-4567</small></p>
-                            </label>
-                            <button class="btn btn-link p-0 mt-2" style="font-size: 0.9rem;" data-bs-toggle="modal" data-bs-target="#editModal">Edit</button>
-                          </div>
-                        </div>
+                        <input type="text" name="address" id="address" placeholder="Enter the address">
                       </div>
                     </div>
 
@@ -253,7 +221,8 @@ function placeOrder() {
         console.error("Detailed Error: ", error.ERROR);
     });
 }
-
+var addresses = @json($addresses);
+console.log(addresses);
 
   </script>
 

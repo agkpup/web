@@ -825,7 +825,7 @@ Price Area
                 <div class="price-card ">
                     <h3 class="box-title">Dry Cleaning Price</h3>
                     <div class="price-card_content">
-                        <h4 class="price-card_price"><span class="currency">$</span>80</h4>
+                        <h4 class="price-card_price"><span class="currency">₹</span>80</h4>
                         <p class="price-card_text">20 CLOTHES PER MONTH</p>
                         <div class="available-list">
                             <ul>
@@ -846,7 +846,7 @@ Price Area
                 <div class="price-card active">
                     <h3 class="box-title">Dry Clean / Laundry</h3>
                     <div class="price-card_content">
-                        <h4 class="price-card_price"><span class="currency">$</span>140</h4>
+                        <h4 class="price-card_price"><span class="currency">₹</span>140</h4>
                         <p class="price-card_text">28 CLOTHES PER MONTH</p>
                         <div class="available-list">
                             <ul>
@@ -867,7 +867,7 @@ Price Area
                 <div class="price-card ">
                     <h3 class="box-title">Dry Clean / Iron / Fold</h3>
                     <div class="price-card_content">
-                        <h4 class="price-card_price"><span class="currency">$</span>180</h4>
+                        <h4 class="price-card_price"><span class="currency">₹</span>180</h4>
                         <p class="price-card_text">30 CLOTHES PER MONTH</p>
                         <div class="available-list">
                             <ul>

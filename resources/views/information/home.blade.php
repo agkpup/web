@@ -8,7 +8,7 @@ Hero Area
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="hero-inner">
-                    <div class="th-hero-bg" data-bg-src="information/assets/img/hero/hero_bg_1_1.jpg">
+                    <div class="th-hero-bg" data-bg-src="information/assets/img/catchytat/hero1/hero_b.png">
                         <img src="{{ asset('information/assets/img/catchytat/hero1/hero_b.png')}}" alt="Hero Image">
                         <div class="bubble"></div>
                     </div>
@@ -29,7 +29,7 @@ Hero Area
             </div>
             <div class="swiper-slide">
                 <div class="hero-inner">
-                    <div class="th-hero-bg" data-bg-src="information/assets/img/hero/hero_bg_1_2.jpg">
+                    <div class="th-hero-bg" data-bg-src="information/assets/img/catchytat/hero1/hero_c.png">
                         <img src="{{ asset('information/assets/img/catchytat/hero1/hero_c.png')}}" alt="Hero Image">
                         <div class="bubble"></div>
                     </div>
@@ -50,7 +50,7 @@ Hero Area
             </div>
             <div class="swiper-slide">
                 <div class="hero-inner">
-                    <div class="th-hero-bg" data-bg-src="information/assets/img/hero/hero_bg_1_3.jpg">
+                    <div class="th-hero-bg" data-bg-src="information/assets/img/catchytat/hero1/hero_e.png">
                         <img src="{{ asset('information/assets/img/catchytat/hero1/hero_e.png')}}" alt="Hero Image">
                         <div class="bubble"></div>
                     </div>

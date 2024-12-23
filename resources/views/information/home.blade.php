@@ -9,7 +9,7 @@ Hero Area
             <div class="swiper-slide">
                 <div class="hero-inner">
                     <div class="th-hero-bg" data-bg-src="information/assets/img/hero/hero_bg_1_1.jpg">
-                        <img src="information/assets/img/catchytat/hero1/hero_b.png" alt="Hero Image">
+                        <img src="{{ asset('information/assets/img/catchytat/hero1/hero_b.png')}}" alt="Hero Image">
                         <div class="bubble"></div>
                     </div>
                     <div class="container">
@@ -30,7 +30,7 @@ Hero Area
             <div class="swiper-slide">
                 <div class="hero-inner">
                     <div class="th-hero-bg" data-bg-src="information/assets/img/hero/hero_bg_1_2.jpg">
-                        <img src="information/assets/img/catchytat/hero1/hero_c.png" alt="Hero Image">
+                        <img src="{{ asset('information/assets/img/catchytat/hero1/hero_c.png')}}" alt="Hero Image">
                         <div class="bubble"></div>
                     </div>
                     <div class="container">
@@ -51,7 +51,7 @@ Hero Area
             <div class="swiper-slide">
                 <div class="hero-inner">
                     <div class="th-hero-bg" data-bg-src="information/assets/img/hero/hero_bg_1_3.jpg">
-                        <img src="information/assets/img/catchytat/hero1/hero_e.png" alt="Hero Image">
+                        <img src="{{ asset('information/assets/img/catchytat/hero1/hero_e.png')}}" alt="Hero Image">
                         <div class="bubble"></div>
                     </div>
                     <div class="container">
@@ -72,14 +72,14 @@ Hero Area
         </div>
     </div>
     <div class="hero-animated-bubble">
-        <img src="information/assets/img/shape/bubble_1.png" alt="Laun">
-        <img src="information/assets/img/shape/bubble_2.png" alt="Laun">
-        <img src="information/assets/img/shape/bubble_3.png" alt="Laun">
-        <img src="information/assets/img/shape/bubble_4.png" alt="Laun">
-        <img src="information/assets/img/shape/bubble_5.png" alt="Laun">
-        <img src="information/assets/img/shape/bubble_6.png" alt="Laun">
-        <img src="information/assets/img/shape/bubble_7.png" alt="Laun">
-        <img src="information/assets/img/shape/bubble_8.png" alt="Laun">
+        <img src="{{ asset('information/assets/img/shape/bubble_1.png')}}" alt="Laun">
+        <img src="{{ asset('information/assets/img/shape/bubble_2.png')}}" alt="Laun">
+        <img src="{{ asset('information/assets/img/shape/bubble_3.png')}}" alt="Laun">
+        <img src="{{ asset('information/assets/img/shape/bubble_4.png')}}" alt="Laun">
+        <img src="{{ asset('information/assets/img/shape/bubble_5.png')}}" alt="Laun">
+        <img src="{{ asset('information/assets/img/shape/bubble_6.png')}}" alt="Laun">
+        <img src="{{ asset('information/assets/img/shape/bubble_7.png')}}" alt="Laun">
+        <img src="{{ asset('information/assets/img/shape/bubble_8.png')}}" alt="Laun">
     </div>
     <div class="icon-box">
         <button data-slider-prev="#heroSlide1" class="slider-arrow default"><i class="far fa-arrow-left"></i></button>
@@ -96,7 +96,7 @@ About Area
             <div class="col-xl-6 wow fadeInLeft">
                 <div class="img-box1">
                     <div class="img1">
-                        <img src="information/assets/img/catchytat/hero1/igcactchytat.png" alt="About">
+                        <img src="{{ asset('information/assets/img/catchytat/hero1/igcactchytat.png')}}" alt="About">
                     </div>
                     <div class="th-experience jump">
                         <h3 class="experience-year"><span class="counter-number">10</span>+</h3>
@@ -139,7 +139,7 @@ feature Area
             <div class="col-md-6 col-lg-4">
                 <div class="feature-item wow fadeInUp">
                     <div class="feature-item_icon">
-                        <img src="information/assets/img/icon/feature_1_1.svg" alt="icon">
+                        <img src="{{ asset('information/assets/img/icon/feature_1_1.svg')}}" alt="icon">
                     </div>
                     <div class="media-body">
                         <h3 class="box-title">100% Happiness Guarantee</h3>
@@ -150,7 +150,7 @@ feature Area
             <div class="col-md-6 col-lg-4">
                 <div class="feature-item wow fadeInDown">
                     <div class="feature-item_icon">
-                        <img src="information/assets/img/icon/feature_1_2.svg" alt="icon">
+                        <img src="{{ asset('information/assets/img/icon/feature_1_2.svg')}}" alt="icon">
                     </div>
                     <div class="media-body">
                         <h3 class="box-title">Free Collection & Delivery</h3>
@@ -161,7 +161,7 @@ feature Area
             <div class="col-md-6 col-lg-4">
                 <div class="feature-item wow fadeInUp">
                     <div class="feature-item_icon">
-                        <img src="information/assets/img/icon/feature_1_3.svg" alt="icon">
+                        <img src="{{ asset('information/assets/img/icon/feature_1_3.svg')}}" alt="icon">
                     </div>
                     <div class="media-body">
                         <h3 class="box-title">24/7 Dedicated Support</h3>
@@ -187,16 +187,16 @@ Service Area
                         <div class="service-box">
                             <div class="service-box_wrapper">
                                 <div class="service-box_img">
-                                    <img src="information/assets/img/service/service_box_1.jpg" alt="img">
+                                    <img src="{{ asset('information/assets/img/service/service_box_1.jpg')}}" alt="img">
                                 </div>
                                 <div class="service-box_icon">
-                                    <img src="information/assets/img/icon/service_box_1.svg" alt="Icon">
+                                    <img src="{{ asset('information/assets/img/icon/service_box_1.svg')}}" alt="Icon">
                                 </div>
                             </div>
                             <div class="box-content" data-bg-src="information/assets/img/shape/service_shape_1.png">
-                                <h3 class="box-title"><a href="service-details.html">Dry Cleaning</a></h3>
+                                <h3 class="box-title"><a href="#">Dry Cleaning</a></h3>
                                 <p class="service-box_text">Dry cleaning is a method of cleaning clothing and textiles that uses a solvent other than water to remove dirt, stains.</p>
-                                <a href="service-details.html" class="th-btn border">Read More</a>
+                                <a href="#" class="th-btn border">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -212,9 +212,9 @@ Service Area
                                 </div>
                             </div>
                             <div class="box-content" data-bg-src="information/assets/img/shape/service_shape_1.png">
-                                <h3 class="box-title"><a href="service-details.html">Wash & Fold</a></h3>
+                                <h3 class="box-title"><a href="#">Wash & Fold</a></h3>
                                 <p class="service-box_text">Wash and fold (also known as drop-off laundry or fluff and fold) is a laundry service offered by many laundromats.</p>
-                                <a href="service-details.html" class="th-btn border">Read More</a>
+                                <a href="#" class="th-btn border">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -223,16 +223,16 @@ Service Area
                         <div class="service-box">
                             <div class="service-box_wrapper">
                                 <div class="service-box_img">
-                                    <img src="information/assets/img/service/service_box_3.jpg" alt="img">
+                                    <img src="{{ asset('information/assets/img/service/service_box_3.jpg')}}" alt="img">
                                 </div>
                                 <div class="service-box_icon">
-                                    <img src="information/assets/img/icon/service_box_3.svg" alt="Icon">
+                                    <img src="{{ asset('information/assets/img/icon/service_box_3.svg')}}" alt="Icon">
                                 </div>
                             </div>
                             <div class="box-content" data-bg-src="information/assets/img/shape/service_shape_1.png">
-                                <h3 class="box-title"><a href="service-details.html">Ironing/Pressing</a></h3>
+                                <h3 class="box-title"><a href="#">Ironing/Pressing</a></h3>
                                 <p class="service-box_text">Ironing or pressing is the process of using a heated iron or press to smooth out wrinkles, creases, and remove fabric</p>
-                                <a href="service-details.html" class="th-btn border">Read More</a>
+                                <a href="#" class="th-btn border">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -241,16 +241,16 @@ Service Area
                         <div class="service-box">
                             <div class="service-box_wrapper">
                                 <div class="service-box_img">
-                                    <img src="information/assets/img/service/service_box_4.jpg" alt="img">
+                                    <img src="{{ asset('information/assets/img/service/service_box_4.jpg')}}" alt="img">
                                 </div>
                                 <div class="service-box_icon">
-                                    <img src="information/assets/img/icon/service_box_4.svg" alt="Icon">
+                                    <img src="{{ asset('information/assets/img/icon/service_box_4.svg')}}" alt="Icon">
                                 </div>
                             </div>
                             <div class="box-content" data-bg-src="information/assets/img/shape/service_shape_1.png">
-                                <h3 class="box-title"><a href="service-details.html">Garments Transformed</a></h3>
+                                <h3 class="box-title"><a href="#">Garments Transformed</a></h3>
                                 <p class="service-box_text">Garments Transformed" is a term that can refer to various aspects of clothing and fashion. It may be used in different.</p>
-                                <a href="service-details.html" class="th-btn border">Read More</a>
+                                <a href="#" class="th-btn border">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -259,16 +259,16 @@ Service Area
                         <div class="service-box">
                             <div class="service-box_wrapper">
                                 <div class="service-box_img">
-                                    <img src="information/assets/img/service/service_box_5.jpg" alt="img">
+                                    <img src="{{ asset('information/assets/img/service/service_box_5.jpg')}}" alt="img">
                                 </div>
                                 <div class="service-box_icon">
-                                    <img src="information/assets/img/icon/service_box_5.svg" alt="Icon">
+                                    <img src="{{ asset('information/assets/img/icon/service_box_5.svg')}}" alt="Icon">
                                 </div>
                             </div>
                             <div class="box-content" data-bg-src="information/assets/img/shape/service_shape_1.png">
-                                <h3 class="box-title"><a href="service-details.html">Household Textile Care</a></h3>
+                                <h3 class="box-title"><a href="#">Household Textile Care</a></h3>
                                 <p class="service-box_text">Household textile care refers to the maintenance and cleaning of various textiles and fabrics used in and around a home</p>
-                                <a href="service-details.html" class="th-btn border">Read More</a>
+                                <a href="#" class="th-btn border">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -277,16 +277,16 @@ Service Area
                         <div class="service-box">
                             <div class="service-box_wrapper">
                                 <div class="service-box_img">
-                                    <img src="information/assets/img/service/service_box_1.jpg" alt="img">
+                                    <img src="{{ asset('information/assets/img/service/service_box_1.jpg')}}" alt="img">
                                 </div>
                                 <div class="service-box_icon">
-                                    <img src="information/assets/img/icon/service_box_6.svg" alt="Icon">
+                                    <img src="{{ asset('information/assets/img/icon/service_box_6.svg')}}" alt="Icon">
                                 </div>
                             </div>
                             <div class="box-content" data-bg-src="information/assets/img/shape/service_shape_1.png">
-                                <h3 class="box-title"><a href="service-details.html">Leather & Suede Care</a></h3>
+                                <h3 class="box-title"><a href="#">Leather & Suede Care</a></h3>
                                 <p class="service-box_text">Leather and suede are durable and stylish materials often used in clothing, footwear, accessories, and furniture</p>
-                                <a href="service-details.html" class="th-btn border">Read More</a>
+                                <a href="#" class="th-btn border">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -349,13 +349,13 @@ Feature Area
                     </div>
                     <div class="checklist list-two-column why-checklist">
                         <ul>
-                            <li><span class="check-img"><img src="information/assets/img/icon/check.svg" alt=""></span> Quality
+                            <li><span class="check-img"><img src="{{ asset('information/assets/img/icon/check.svg')}}" alt=""></span> Quality
                                 Assurance</li>
-                            <li><span class="check-img"><img src="information/assets/img/icon/check.svg" alt=""></span>Expert
+                            <li><span class="check-img"><img src="{{ asset('information/assets/img/icon/check.svg')}}" alt=""></span>Expert
                                 Handling</li>
-                            <li><span class="check-img"><img src="information/assets/img/icon/check.svg" alt=""></span>Transparent
+                            <li><span class="check-img"><img src="{{ asset('information/assets/img/icon/check.svg')}}" alt=""></span>Transparent
                                 Pricing</li>
-                            <li><span class="check-img"><img src="information/assets/img/icon/check.svg" alt=""></span>Folding
+                            <li><span class="check-img"><img src="{{ asset('information/assets/img/icon/check.svg')}}" alt=""></span>Folding
                                 Preferences</li>
                         </ul>
                     </div>
@@ -363,7 +363,7 @@ Feature Area
                         <a href="#" class="th-btn style3">Wash My Clothes</a>
                         <div class="about-profile">
                             <div class="about-avater">
-                                <img src="information/assets/img/catchytat/hero1/teamwork_1256650.png" alt="about">
+                                <img src="{{ asset('information/assets/img/catchytat/hero1/teamwork_1256650.png')}}" alt="about">
                             </div>
                             <div class="media-body">
                                 <h5 class="box-title mb-0">Nitin Vaid</h5>
@@ -380,7 +380,7 @@ Feature Area
             </div>
         </div>
     </div>
-    <div class="shape-mockup jump d-none d-xl-block" data-bottom="8%" data-right="0%"><img src="information/assets/img/catchytat/dry-cleaned-clothes.png.webp" alt="shape">
+    <div class="shape-mockup jump d-none d-xl-block" data-bottom="8%" data-right="0%"><img src="{{ asset('information/assets/img/catchytat/dry-cleaned-clothes.png.webp')}}" alt="shape">
     </div>
 </div><!--==============================
 Process Area
@@ -397,7 +397,7 @@ Process Area
                 <div class="col-xl-4 col-md-6">
                     <div class="process-card ">
                         <div class="box-icon">
-                            <img src="information/assets/img/icon/process_card_1.svg" alt="icon">
+                            <img src="{{ asset('information/assets/img/icon/process_card_1.svg')}}" alt="icon">
                         </div>
                         <div class="box-content">
                             <div class="box-top">
@@ -411,7 +411,7 @@ Process Area
                 <div class="col-xl-4 col-md-6">
                     <div class="process-card active">
                         <div class="box-icon">
-                            <img src="information/assets/img/icon/process_card_2.svg" alt="icon">
+                            <img src="{{ asset('information/assets/img/icon/process_card_2.svg')}}" alt="icon">
                         </div>
                         <div class="box-content">
                             <div class="box-top">
@@ -425,7 +425,7 @@ Process Area
                 <div class="col-xl-4 col-md-6">
                     <div class="process-card ">
                         <div class="box-icon">
-                            <img src="information/assets/img/icon/process_card_3.svg" alt="icon">
+                            <img src="{{ asset('information/assets/img/icon/process_card_3.svg')}}" alt="icon">
                         </div>
                         <div class="box-content">
                             <div class="box-top">
@@ -464,7 +464,7 @@ Cta Area
 </section><!--==============================
 Team Area
 ==============================-->
-{{-- <section class="team-area space" data-bg-src="information/assets/img/bg/team_bg_1.jpg">
+ <!-- <section class="team-area space" data-bg-src="information/assets/img/bg/team_bg_1.jpg">
     <div class="container z-index-common">
         <div class="title-area text-center">
             <span class="sub-title">Expert Team</span>
@@ -473,11 +473,11 @@ Team Area
         <div class="slider-area">
             <div class="swiper th-slider has-shadow" id="teamSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
                 <div class="swiper-wrapper">
-                    <!-- Single Item -->
+            
                     <div class="swiper-slide">
                         <div class="th-team team-box">
                             <div class="team-img">
-                                <img src="information/assets/img/team/team_1_1.jpg" alt="Team">
+                                <img src="{{ asset('information/assets/img/team/team_1_1.jpg')}}" alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://facebook.com/" tabindex="0"><i class="fab fa-facebook-f"></i></a>
                                     <a target="_blank" href="https://twitter.com/" tabindex="0"><i class="fab fa-twitter"></i></a>
@@ -485,16 +485,16 @@ Team Area
                                 </div>
                             </div>
                             <div class="team-content">
-                                <!-- <div class="plus-btn"> <i class="fa-solid fa-plus"></i></div> -->
+                               
                                 <div class="media-body">
-                                    <h3 class="box-title"><a href="team-details.html">William James</a></h3>
+                                    <h3 class="box-title"><a href="#">William James</a></h3>
                                     <span class="team-desig">Dry Cleaner</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Single Item -->
+             
                     <div class="swiper-slide">
                         <div class="th-team team-box">
                             <div class="team-img">
@@ -506,16 +506,16 @@ Team Area
                                 </div>
                             </div>
                             <div class="team-content">
-                                <!-- <div class="plus-btn"> <i class="fa-solid fa-plus"></i></div> -->
+                           
                                 <div class="media-body">
-                                    <h3 class="box-title"><a href="team-details.html">Jasmin Mentara</a></h3>
+                                    <h3 class="box-title"><a href="#">Jasmin Mentara</a></h3>
                                     <span class="team-desig">Dry Cleaner</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Single Item -->
+             
                     <div class="swiper-slide">
                         <div class="th-team team-box">
                             <div class="team-img">
@@ -527,16 +527,16 @@ Team Area
                                 </div>
                             </div>
                             <div class="team-content">
-                                <!-- <div class="plus-btn"> <i class="fa-solid fa-plus"></i></div> -->
+                            
                                 <div class="media-body">
-                                    <h3 class="box-title"><a href="team-details.html">Danial Facundo</a></h3>
+                                    <h3 class="box-title"><a href="#">Danial Facundo</a></h3>
                                     <span class="team-desig">Dry Cleaner</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Single Item -->
+       
                     <div class="swiper-slide">
                         <div class="th-team team-box">
                             <div class="team-img">
@@ -548,16 +548,15 @@ Team Area
                                 </div>
                             </div>
                             <div class="team-content">
-                                <!-- <div class="plus-btn"> <i class="fa-solid fa-plus"></i></div> -->
+                           
                                 <div class="media-body">
-                                    <h3 class="box-title"><a href="team-details.html">Ema Margret</a></h3>
+                                    <h3 class="box-title"><a href="#">Ema Margret</a></h3>
                                     <span class="team-desig">Dry Cleaner</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Single Item -->
                     <div class="swiper-slide">
                         <div class="th-team team-box">
                             <div class="team-img">
@@ -569,9 +568,9 @@ Team Area
                                 </div>
                             </div>
                             <div class="team-content">
-                                <!-- <div class="plus-btn"> <i class="fa-solid fa-plus"></i></div> -->
+                            
                                 <div class="media-body">
-                                    <h3 class="box-title"><a href="team-details.html">Henry Haninkot</a></h3>
+                                    <h3 class="box-title"><a href="#">Henry Haninkot</a></h3>
                                     <span class="team-desig">Dry Cleaner</span>
                                 </div>
                             </div>
@@ -586,7 +585,7 @@ Team Area
         </div>
 
     </div>
-</section> --}}
+</section>  -->
 
 
 <!--==============================
@@ -656,7 +655,7 @@ Faq Area
             <div class="col-xl-6">
                 <div class="faq-img1 ps-xl-4">
                     <div class="img1">
-                        <img src="information/assets/img/catchytat/hero1/shoes.png" alt="faq">
+                        <img src="{{ asset('information/assets/img/catchytat/hero1/shoes.png')}}" alt="faq">
                     </div>
                 </div>
             </div>
@@ -713,7 +712,7 @@ Testimonial Area
                                     <div class="testi-card_wrapp">
                                         <div class="testi-card_profile">
                                             <div class="testi-card_avater global-img">
-                                                <img src="information/assets/img/testimonial/testi_1_1.jpg" alt="Avater">
+                                                <img src="{{ asset('information/assets/img/testimonial/testi_1_1.jpg')}}" alt="Avater">
                                             </div>
                                             <div class="star-icon">
                                                 <a href="#"><i class="fa-solid fa-star"></i></a>
@@ -731,7 +730,7 @@ Testimonial Area
                                                     <span class="testi-card_desig">Founder CEO</span>
                                                 </div>
                                                 <div class="testi-quote">
-                                                    <img src="information/assets/img/icon/quote.svg" alt="">
+                                                    <img src="{{ asset('information/assets/img/icon/quote.svg')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -743,7 +742,7 @@ Testimonial Area
                                     <div class="testi-card_wrapp">
                                         <div class="testi-card_profile">
                                             <div class="testi-card_avater global-img">
-                                                <img src="information/assets/img/testimonial/testi_1_2.jpg" alt="Avater">
+                                                <img src="{{ asset('information/assets/img/testimonial/testi_1_2.jpg')}}" alt="Avater">
                                             </div>
                                             <div class="star-icon">
                                                 <a href="#"><i class="fa-solid fa-star"></i></a>
@@ -761,7 +760,7 @@ Testimonial Area
                                                     <span class="testi-card_desig">Project Manager</span>
                                                 </div>
                                                 <div class="testi-quote">
-                                                    <img src="information/assets/img/icon/quote.svg" alt="">
+                                                    <img src="{{ asset('information/assets/img/icon/quote.svg')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -896,52 +895,52 @@ Brand Area
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="brand-box">
-                        <img src="information/assets/img/brand/brand_1_1.svg" alt="Brand Logo">
+                        <img src="{{ asset('information/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brand-box">
-                        <img src="information/assets/img/brand/brand_1_2.svg" alt="Brand Logo">
+                        <img src="{{ asset('information/assets/img/brand/brand_1_2.svg')}}" alt="Brand Logo">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brand-box">
-                        <img src="information/assets/img/brand/brand_1_3.svg" alt="Brand Logo">
+                        <img src="{{ asset('information/assets/img/brand/brand_1_3.svg')}}" alt="Brand Logo">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brand-box">
-                        <img src="information/assets/img/brand/brand_1_4.svg" alt="Brand Logo">
+                        <img src="{{ asset('information/assets/img/brand/brand_1_4.svg')}}" alt="Brand Logo">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brand-box">
-                        <img src="information/assets/img/brand/brand_1_5.svg" alt="Brand Logo">
+                        <img src="{{ asset('information/assets/img/brand/brand_1_5.svg')}}" alt="Brand Logo">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brand-box">
-                        <img src="information/assets/img/brand/brand_1_6.svg" alt="Brand Logo">
+                        <img src="{{ asset('information/assets/img/brand/brand_1_6.svg')}}" alt="Brand Logo">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brand-box">
-                        <img src="information/assets/img/brand/brand_1_7.svg" alt="Brand Logo">
+                        <img src="{{ asset('information/assets/img/brand/brand_1_7.svg')}}" alt="Brand Logo">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brand-box">
-                        <img src="information/assets/img/brand/brand_1_8.svg" alt="Brand Logo">
+                        <img src="{{ asset('information/assets/img/brand/brand_1_8.svg')}}" alt="Brand Logo">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brand-box">
-                        <img src="information/assets/img/brand/brand_1_1.svg" alt="Brand Logo">
+                        <img src="{{ asset('information/assets/img/brand/brand_1_1.svg')}}" alt="Brand Logo">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="brand-box">
-                        <img src="information/assets/img/brand/brand_1_2.svg" alt="Brand Logo">
+                        <img src="{{ asset('information/assets/img/brand/brand_1_2.svg')}}" alt="Brand Logo">
                     </div>
                 </div>
             </div>
@@ -951,7 +950,7 @@ Brand Area
 </div> <!--==============================
 Blog Area
 ==============================-->
-{{-- <section class="overflow-hidden space" id="blog-sec" data-bg-src="information/assets/img/bg/blog_bg_1.jpg">
+ <!-- <section class="overflow-hidden space" id="blog-sec" data-bg-src="information/assets/img/bg/blog_bg_1.jpg">
     <div class="container">
         <div class="row justify-content-lg-between justify-content-center align-items-end">
             <div class="col-lg">
@@ -972,7 +971,7 @@ Blog Area
                     <div class="swiper-slide">
                         <div class="blog-card">
                             <div class="blog-img">
-                                <img src="information/assets/img/blog/blog_1_1.jpg" alt="blog image">
+                                <img src="{{ asset('information/assets/img/blog/blog_1_1.jpg')}}" alt="blog image">
                             </div>
                             <div class="blog-content">
                                 <div class="blog-meta">
@@ -1071,7 +1070,7 @@ Blog Area
             <button data-slider-next="#blogSlider1" class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button>
         </div>
     </div>
-</section> --}}
+</section>  -->
 
 <!--==============================
 Footer Area

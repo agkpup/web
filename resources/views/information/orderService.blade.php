@@ -621,6 +621,7 @@
     if (existingItem) {
         // If the item already exists, increase its quantity
         existingItem.quantity += quantity;  // Add the passed quantity, instead of just 1
+        showNotification('success', 'Added to cart.');
     } else {
         // If the item doesn't exist, create a new item object
         const newItem = {
@@ -632,6 +633,7 @@
             quantity: quantity || 1  // Ensure the quantity is 1 if not provided
         };
         cart.push(newItem);
+        showNotification('success', 'Added to cart.');
     }
 
     // Save the updated cart back to localStorage

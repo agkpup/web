@@ -72,9 +72,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/addresses/{address}', [AddressController::class, 'destroy'])->name('addresses.destroy');
 });
 
-
-    Route::get('/admin/view-orders', [AdminController::class,'viewOrder'])->name('list-order');
-
-    Route::get('/admin/view-inquiries',[AdminController::class,'viewInquiry'])->name('view-inquiries');
-
-    Route::post('/admin/view-orders/description',[AdminController::class,'detailDescription'])->name('view-order-description');
+Route::middleware(['auth', 'check.email'])->group(function () {
+    Route::get('/admin/view-orders', [AdminController::class, 'viewOrder'])->name('list-order');
+    Route::get('/admin/view-inquiries', [AdminController::class, 'viewInquiry'])->name('view-inquiries');
+    Route::post('/admin/view-orders/description', [AdminController::class, 'detailDescription'])->name('view-order-description');
+});

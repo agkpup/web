@@ -147,6 +147,7 @@
                                                         <form action="{{ route('view-order-description') }}" method="POST">
                                                             @csrf  <!-- Add CSRF token for security -->
                                                             <input type="hidden" name="userId" value="{{ $order->user_id }}">
+                                                            <input type="hidden" name="orderId" value="{{ $order->id }}">
                                                             <button type="submit" class="btn btn-primary btn-lg btn-rounded m-b-10 m-l-5">View Order</button>
                                                         </form>
                                                     </div>
@@ -384,5 +385,9 @@
         <input type="search" value="" placeholder="type keyword(s) here" />
         <button type="submit" class="btn btn-primary">Search</button>
     </form>
+    <script>
+        var n = @json($orderList);
+        console.log(n);
+    </script>
 </div>
 @endsection

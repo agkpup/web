@@ -8,7 +8,7 @@ Hero Area
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="hero-inner">
-                    <div class="th-hero-bg" data-bg-src="information/assets/img/catchytat/hero1/hero_b.png">
+                    <div class="th-hero-bg" data-bg-src="{{ asset('information/assets/img/catchytat/hero1/hero_b.png')}}">
                         <img src="{{ asset('information/assets/img/catchytat/hero1/hero_b.png')}}" alt="Hero Image">
                         <div class="bubble"></div>
                     </div>
@@ -29,7 +29,7 @@ Hero Area
             </div>
             <div class="swiper-slide">
                 <div class="hero-inner">
-                    <div class="th-hero-bg" data-bg-src="information/assets/img/catchytat/hero1/hero_c.png">
+                    <div class="th-hero-bg" data-bg-src="{{ asset('information/assets/img/catchytat/hero1/hero_c.png')}}">
                         <img src="{{ asset('information/assets/img/catchytat/hero1/hero_c.png')}}" alt="Hero Image">
                         <div class="bubble"></div>
                     </div>
@@ -50,7 +50,7 @@ Hero Area
             </div>
             <div class="swiper-slide">
                 <div class="hero-inner">
-                    <div class="th-hero-bg" data-bg-src="information/assets/img/catchytat/hero1/hero_e.png">
+                    <div class="th-hero-bg" data-bg-src="{{ asset('information/assets/img/catchytat/hero1/hero_e.png')}}">
                         <img src="{{ asset('information/assets/img/catchytat/hero1/hero_e.png')}}" alt="Hero Image">
                         <div class="bubble"></div>
                     </div>
@@ -1083,7 +1083,7 @@ Footer Area
                     <div class="widget footer-widget">
                         <div class="th-widget-about">
                             <div class="about-logo">
-                                <a href="{{route('aboutUs')}}"><img src="information/assets/img/logo-white.svg" alt="Laun"></a>
+                                <a href="{{route('aboutUs')}}"><img src="{{ asset('information/assets/img/catchybgt.png')}}" alt="Laun" style="max-width:300px; max-height:100px;"></a>
                             </div>
                             <p class="about-text">Begin by scheduling your laundry service. You can choose from our convenient options Any
                                 visible stains are pre-treated to ensure.</p>
@@ -1092,13 +1092,13 @@ Footer Area
                                     <div class="footer-info_icon">
                                         <i class="fa-sharp fa-solid fa-phone"></i>
                                     </div>
-                                    <a class="text-inherit" href="tel:+256214203215">+256 214 203 215</a>
+                                    <a class="text-inherit" href="tel:+919056223996">91 90562 23996</a>
                                 </div>
                                 <div class="footer-info">
                                     <div class="footer-info_icon">
                                         <i class="fas fa-envelope"></i>
                                     </div>
-                                    <a class="text-inherit" href="mailto:info@laun.com">info@laun.com</a>
+                                    <a class="text-inherit" href="mailto:connect@catchytat.com">connect@catchytat.com</a>
                                 </div>
                                 <div class="footer-info">
                                     <div class="footer-info_icon">
@@ -1112,14 +1112,14 @@ Footer Area
                 </div>
                 <div class="col-lg-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
-                        <h3 class="widget_title">Our Services</h3>
+                        <h3 class="widget_title" style="color:black;">Our Services</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu style2">
                                 <li><a href="{{route('serviceOrder')}}">Quick Wash Express</a></li>
                                 <li><a href="{{route('serviceOrder')}}">Dust Removal</a></li>
                                 <li><a href="{{route('serviceOrder')}}">Stain Master Pro</a></li>
                                 <li><a href="{{route('serviceOrder')}}">Damage Repair</a></li>
-                                <li><a href="{{route('serviceOrder')}}">Eco Fresh Laundryy</a></li>
+                                <li><a href="{{route('serviceOrder')}}">Eco Fresh Laundry</a></li>
                                 <li><a href="{{route('serviceOrder')}}">Sanitize clothes</a></li>
                                 <li><a href="{{route('serviceOrder')}}">Bright Blitz Laundry</a></li>
                                 <li><a href="{{route('serviceOrder')}}">Dry Cleaning</a></li>
@@ -1158,7 +1158,7 @@ Footer Area
         <div class="container">
             <div class="row gy-2 align-items-center">
                 <div class="col-md-6">
-                    <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2023 <a href="{{route('serviceOrder')}}">Laun</a>. All Rights Reserved.</p>
+                    <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a href="{{route('serviceOrder')}}">Laun</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="th-social"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></div>
@@ -1179,10 +1179,10 @@ Footer Area
         <div class="bubble-9"></div>
         <div class="bubble-10"></div>
     </div>
-    <div class="shape-mockup jump d-none d-xl-block" data-bottom="0%" data-left="0%"><img src="information/assets/img/shape/footer_shape_1.png" alt="shape">
+    <!-- <div class="shape-mockup jump d-none d-xl-block" data-bottom="0%" data-left="0%"><img src="{{ asset('information/assets/img/cphoto/home_shirt.jpg')}}" alt="shape">
     </div>
-    <div class="shape-mockup jump d-none d-xl-block" data-bottom="0%" data-right="0%"><img src="information/assets/img/shape/footer_shape_2.png" alt="shape">
-    </div>
+    <div class="shape-mockup jump d-none d-xl-block" data-bottom="0%" data-right="0%"><img src="{{ asset('information/assets/img/cphoto/bride.jpg')}}" alt="shape">
+    </div> -->
 </footer>
 
 <!--********************************

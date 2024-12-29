@@ -2359,6 +2359,9 @@ hr.title-line {
   position: absolute;
   z-index: -1;
   pointer-events: none;
+  backdrop-filter: blur(10px);
+  color: #ffa31a;
+  opacity: 0.05;
 }
 
 .shape-mockup.z-index-3 {
@@ -3948,6 +3951,7 @@ a.text-theme:hover,
   line-height: 1em;
   padding-bottom: 20px;
   margin: -0.12em 0 38px 0;
+  color: black;
 }
 
 .widget_title:after, .widget_title:before {
@@ -4042,7 +4046,7 @@ a.text-theme:hover,
   padding: 13px 20px;
   margin-right: 6px;
   margin-bottom: 10px;
-  color: var(--body-color);
+  color: black;
   background-color: var(--white-color);
   border-radius: 3px;
 }
@@ -6555,12 +6559,15 @@ ol.wp-block-rss {
 
 /*------------------- 4.3. Footer  -------------------*/
 .footer-wrapper {
-  --border-color: rgba(255, 255, 255, 0.3);
-  --body-color: #788094;
+  /* --border-color: rgba(255, 255, 255, 0.3);
+  --body-color: #788094; */
   position: relative;
   z-index: 2;
-  background-color: var(--title-color);
+  /* background-color: var(--title-color); */
   overflow: hidden;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #000000;
 }
 
 .footer-wrapper .social-links a {

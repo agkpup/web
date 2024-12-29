@@ -20,16 +20,19 @@ class AdminController extends Controller
     }
     public function detailDescription(Request $request){
         $request->validate([
-            'userId' => 'required|exists:users,id',  // Ensures the userId is valid
+            'userId' => 'required|exists:users,id',  // Ensures userId is a valid user ID
+            'orderId' => 'required|exists:orders,id,user_id,' . $request->input('userId')  // Ensures orderId exists and belongs to the specified userId
         ]);
-
-        // Get the userId from the request
+    
+        // Get the userId and orderId from the request
         $userId = $request->input('userId');
+        $orderId = $request->input('orderId');
 
         // Fetch the user's orders and their cart data
         $order = Order::with(['user', 'user.defaultAddress']) // Include user and default address
-                      ->where('user_id', $userId) // Filter orders by userId
-                      ->get();
+        ->where('user_id', $userId)  // Filter by user_id
+        ->where('id', $orderId)
+                      ->first();
 
         return view('dashboard.viewListOrder',compact('order'));
     }

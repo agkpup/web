@@ -208,10 +208,12 @@ function placeOrder() {
         } else {
             if (data.success) {
                 console.log('Order placed successfully:', data);
-                alert('Order placed successfully! Your order ID is ' + data.order_id);
+                showNotification('success', 'Order placed successfully! Your order ID is'+ data.order_id);
+                //alert('Order placed successfully! Your order ID is ' + data.order_id);
             } else {
                 console.error('Error placing order:', data.message);
-                alert('Error: ' + data.message);
+                showNotification('error',  data.message);
+                //alert('Error: ' + data.message);
             }
         }
     })

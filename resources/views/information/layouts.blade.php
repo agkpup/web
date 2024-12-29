@@ -59,7 +59,35 @@
 
 <!-- Theme Custom CSS -->
 <link rel="stylesheet" href="{{ asset('information/assets/css/style.css') }}">
+<style>
+    .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Default success color */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;  /* Initially hidden */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+}
 
+.notification.error {
+    background-color: #f44336; /* Error color */
+}
+
+#close-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+</style>
 </head>
 
 <body>
@@ -72,7 +100,12 @@
     <!--********************************
    		Code Start From Here
 	******************************** -->
-
+<!-- start -->
+<div id="notification" class="notification">
+        <span id="notification-message"></span>
+        <button id="close-btn">X</button>
+    </div>
+<!-- end notification -->
     <!--==============================
      Preloader
   ==============================-->
@@ -95,7 +128,7 @@
             <div class="widget  ">
                 <div class="th-widget-about">
                     <div class="about-logo">
-                        <a href="{{ route('homeLanding') }}"><img src="information/assets/img/catchytat.png" alt="Laun"></a>
+                        <a href="{{ route('homeLanding') }}"><img src="{{asset('information/assets/img/catchybgt.png')}}" alt="catchyTAT"></a>
                     </div>
                     <p class="about-text">At catchyTat, we provide specialized care for your seasonal laundry needs. Our expert winterization services protect and store your heavy winter garments during the off-season, and when the season changes, we ensure they’re fresh, clean, and ready to wear.</p>
                     <div class="th-social">
@@ -112,33 +145,6 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="widget  ">
-                <h3 class="widget_title">Recent Posts</h3>
-                <div class="recent-post-wrap">
-                    <div class="recent-post">
-                        <div class="media-img">
-                            <a href="blog-details.html"><img src="information/assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
-                        </div>
-                        <div class="media-body">
-                            <div class="recent-post-meta">
-                                <a href="blog.html"><i class="far fa-calendar"></i>21 October , 2023</a>
-                            </div>
-                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">A Fresh Start for Your Wardrobe</a></h4>
-                        </div>
-                    </div>
-                    <div class="recent-post">
-                        <div class="media-img">
-                            <a href="blog-details.html"><img src="information/assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
-                        </div>
-                        <div class="media-body">
-                            <div class="recent-post-meta">
-                                <a href="blog.html"><i class="far fa-calendar"></i>22 October , 2023</a>
-                            </div>
-                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Where Clean Meets Convenience</a></h4>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
             <div class="widget  ">
                 <h3 class="widget_title">Contact Us</h3>
                 <div class="th-widget-contact">
@@ -201,6 +207,10 @@
                         <a href="{{route('contactUs')}}">Contact</a>
                     </li>
                 </ul>
+                <button class="th-btn style4 th-radius" onclick="openOrders()">My Orders</button>
+                    <button type="button" class="th-btn style4 th-radius" data-bs-toggle="modal" data-bs-target="#authModal">
+                        Log In
+                      </button>
             </div>
         </div>
     </div><!--==============================
@@ -212,7 +222,7 @@
                 <div class="row justify-content-center justify-content-lg-between align-items-center">
                     <div class="col-auto d-none d-md-block">
                         <div class="header-links style2">
-                            <p class="header-notice text-theme">Welcome to Laundry Service & Dry Cleaning</p>
+                            <p class="header-notice" style="color:white">Welcome to Laundry Service & Dry Cleaning</p>
                             <ul>
                                 <li><i class="fa-solid fa-phone"></i>Phone:<a href="tel:++91 90562 23996">+91 90562 23996</a></li>
                                 <li><i class="fa-solid fa-envelope"></i>Email:<a href="mailto:connect@catchytat.com">connect@catchytat.com</a>
@@ -544,6 +554,47 @@ function openOrders() {
     window.location.href = '/checkout'; // Navigate to the checkout page
 }
 
+// Function to create and show the notification
+function showNotification(msgType, msg) {
+    const notification = document.getElementById('notification');
+    const notificationMessage = document.getElementById('notification-message');
+
+    // Set the message and notification type (success or alert)
+    notificationMessage.textContent = msg; 
+    notification.className = 'notification';  // Reset to base notification class
+    notification.classList.add(msgType); // Add class for the type (success/error)
+
+    // Show the notification
+    notification.style.display = 'block';
+    notification.style.opacity = '1'; // Fade-in the notification
+
+    // Call function to hide notification after 2 seconds
+    hideNotification(notification);
+}
+
+// Function to hide the notification (after a delay)
+function hideNotification(notification) {
+    setTimeout(function () {
+        notification.style.opacity = '0'; // Fade out
+        setTimeout(function () {
+            notification.style.display = 'none'; // Hide the notification after fade
+        }, 500);
+    }, 2000); // 2 seconds delay before fading out
+}
+
+// Close button functionality
+document.getElementById('close-btn').addEventListener('click', function () {
+    const notification = document.getElementById('notification');
+    notification.style.opacity = '0';
+    setTimeout(function () {
+        notification.style.display = 'none';
+    }, 500);
+});
+
+// window.onload = function () {
+//     // Show a success notification after the page loads
+//     showNotification('success', 'Welcome! The page has loaded successfully.');
+// };
 </script>
 </body>
 
